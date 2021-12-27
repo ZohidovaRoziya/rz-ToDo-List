@@ -1,0 +1,50 @@
+/* GLOBAL CSS START  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing:inherit;
+}
+
+*:focus {
+    outline: 2px dotted orange;
+    outline-offset: 3px;
+}
+
+html {
+    height: 100%;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* CONTAINER CSS START  */
+.container {
+     width: 100%;
+     max-width: 1200px;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 50px;
+     padding-right: 50px;
+}
+
+/* SAIT MAIN CSS START  */
+.site-main {
+    flex-grow: 1;
+}
