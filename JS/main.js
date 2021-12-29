@@ -81,6 +81,7 @@ document.addEventListener( "keydown" , (e)=> {
         if ( e.keyCode == 46){
            todo = data[data.length - 1]
            todo.remove()
+           deleteMessage(`1 ta element o'chrildi`)
         }
     }
 })
