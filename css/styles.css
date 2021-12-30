@@ -136,8 +136,8 @@ body {
 /* TODO LIST CSS START  */
 .todo-list {
   list-style-type: none;
-  width: 1000%;
-  max-width: 600px;
+  width: 100%;
+ min-width: 600px;
   height: 200px;
   margin-top: 20px;
 }
