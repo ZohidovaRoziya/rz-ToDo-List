@@ -100,7 +100,8 @@ body {
 
 .todo-input {
   display: inline-block;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   margin: 0;
   padding: 5;
@@ -113,7 +114,8 @@ body {
 }
 
 .add-todo-btn {
-  width: 50px;
+  width: 100%;
+  max-width: 50px;
   height: 50px;
   border: none;
   background-color: none;
@@ -134,7 +136,8 @@ body {
 /* TODO LIST CSS START  */
 .todo-list {
   list-style-type: none;
-  width: 600px;
+  width: 1000%;
+  max-width: 600px;
   height: 200px;
   margin-top: 20px;
 }
@@ -166,7 +169,8 @@ body {
 }
 
 .todo-trash-btn {
-  width: 40px;
+  width: 100%;
+  max-width: 40px;
   height: 40px;
   border-radius: 5px;
   border: none;
@@ -206,7 +210,8 @@ body {
 /* MODAL CSS STAR  */
 
 .modal {
-  width: 520px;
+  width: 100%;
+  max-width: 520px;
   height: 100px;
   border-radius: 15px;
   background-color: #2983b8;
