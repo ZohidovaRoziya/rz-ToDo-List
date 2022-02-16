@@ -1,17 +1,26 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* GLOBAL IMPORT FONT FAMILY  */
-@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap");
 
 /* GLOBAL CSS START  */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 * {
@@ -19,21 +28,29 @@
 }
 
 html {
-  height: 100%;
-  box-sizing: border-box;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
+  background-color: magenta;
+
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
   padding: 0;
   margin: 0;
   font-family: 'Lato',"Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background: url(https://source.unsplash.com/1980x900/?cloud) 0% 0% / cover
+  background: url("https://source.unsplash.com/1980x900/?cloud") 0% 0% / cover
     no-repeat;
   background-repeat: no-repeat;
 }
@@ -48,14 +65,23 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* SAIT MAIN CSS START  */
 .site-main {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 /* TODO HEADING CSS START  */
@@ -65,10 +91,17 @@ body {
 
 /* TODO LIST FORM CSS START  */
 .todo-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 5px 5px 40px #838383;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 5px 5px 40px #838383;
+          box-shadow: 5px 5px 40px #838383;
   border-radius: 15px;
 }
 
@@ -79,6 +112,12 @@ body {
 
 .todo-form {
   background-color: #ae41d0;
+  background-image: -o-linear-gradient(
+    47deg,
+    #ae41d0 0%,
+    #fc98f5 46%,
+    #d62ed5 100%
+  );
   background-image: linear-gradient(
     43deg,
     #ae41d0 0%,
@@ -90,9 +129,15 @@ body {
 }
 
 .wrapper-inp-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 2px dashed rgb(134, 48, 134);
   border-radius: 5px;
   margin: 3px;
@@ -143,11 +188,25 @@ body {
 }
 
 .todo-item {
+  min-width: 450px;
   height: 50px;
   padding-left: 25px;
   padding-right: 30px;
   border-radius: 10px;
   background-color: #de00c6;
+  background-image: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(#e462d7),
+    color-stop(54%, #a825aa),
+    to(#eb52d4)
+  );
+  background-image: -o-linear-gradient(
+    left,
+    #e462d7 0%,
+    #a825aa 54%,
+    #eb52d4 100%
+  );
   background-image: linear-gradient(
     90deg,
     #e462d7 0%,
@@ -155,14 +214,21 @@ body {
     #eb52d4 100%
   );
   margin-bottom: 15px;
-  box-shadow: 5px 5px 20px #c9c5c5;
+  -webkit-box-shadow: 5px 5px 20px #c9c5c5;
+          box-shadow: 5px 5px 20px #c9c5c5;
 
 }
 
 .todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 50px;
   font-size: 25px;
   color: white;
@@ -192,7 +258,8 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(235, 28, 166);
+  -webkit-box-shadow: inset 0 0 5px rgb(235, 28, 166);
+          box-shadow: inset 0 0 5px rgb(235, 28, 166);
   border-radius: 10px;
 }
 
@@ -200,7 +267,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: magenta;
   border-radius: 10px;
-}
+} 
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -215,8 +282,10 @@ body {
   height: 100px;
   border-radius: 15px;
   background-color: #2983b8;
+  background-image: -o-linear-gradient(45deg, #2983b8 48%, #af13ab 49%);
   background-image: linear-gradient(45deg, #2983b8 48%, #af13ab 49%);  
-  box-shadow: 0 0 20px #797979;
+  -webkit-box-shadow: 0 0 20px #797979;  
+          box-shadow: 0 0 20px #797979;
   position: absolute;
   color: #fff;
   font-weight: normal;
@@ -234,7 +303,8 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 /* DELETE CSS START  */
